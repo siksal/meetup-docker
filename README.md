@@ -25,6 +25,7 @@ Build container from scratch
 cd 
 git clone https://github.com/siksal/meetup-docker.git
 cd meetup-docker
+sudo systemctl start docker # start docker
 docker build . -t tb3-lqr
 ```
 
