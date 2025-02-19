@@ -13,7 +13,7 @@ This Docker container contains [ROS 2 Humble](https://docs.ros.org/en/humble/), 
 
 Install Docker and Rocker
 
-* [Install Docker](https://docs.docker.com/engine/install/) on your OS platform.
+* [Install Docker](https://docs.docker.com/get-started/get-docker/) on your OS platform.
 * You may need to [add yourself to the Docker group](https://stackoverflow.com/questions/21871479/docker-cant-connect-to-docker-daemon) with the command `sudo usermod -aG docker $(whoami)` 
 * Install Rocker:
     * Debians (Recommended): `sudo apt-get install python3-rocker`
