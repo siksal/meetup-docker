@@ -8,8 +8,7 @@ This Docker container contains [ROS 2 Humble](https://docs.ros.org/en/humble/), 
 
 👉 This Docker also includes a full ROS 2 Humble install. If you would like to brush up on your ROS skills you can work through the ROS 2 tutorials. We suggest you start with the [CLI Tutorials.](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools.html)
 
-
-# Setup Instructions
+## Setup Instructions
 
 Install Docker and Rocker
 
@@ -34,7 +33,7 @@ docker build . -t tb3-lqr   # this process takes a lot of time and data
  ![Docker Build](/docker-build.png)
 
 
-# How to Use Your Container
+## How to Use Your Container
 Start container: 
 ```bash 
 rocker --x11 --devices=/dev/dri tb3-lqr bash
@@ -54,3 +53,13 @@ Run Turtlebot3:
 ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 ```
  ![The TurtleBot 3 on Gazebo Simulator in a Docker Container](/tb3.png)
+
+If you want to use the same container on a new/different shell:
+* Open a new tab/terminal/shell.
+* Check your container ID on the new tab/terminal. Use `docker ps` to see the ID
+* Copy your container ID
+* To start a new shell on the same container, run: 
+```bash
+docker exec -it <container_id> bash # replace <container_id> with the actual ID
+```
+![Container in New Shell](/new-shell-same-container.png)
