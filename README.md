@@ -36,7 +36,7 @@ docker build . -t tb3-lqr
 # How to Use Your Container
 Start container: 
 ```bash 
-rocker --x11 --devices=/dev/dri tb4 bash
+rocker --x11 --devices=/dev/dri tb3-lqr bash
 ```
 
 Source Turtlebot and Gazebo:
