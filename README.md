@@ -26,7 +26,7 @@ cd
 git clone https://github.com/siksal/meetup-docker.git
 cd meetup-docker
 sudo systemctl start docker # start docker
-docker build . -t tb3-lqr
+docker build . -t tb3-lqr   # this process takes a lot of time and data
 ```
 
 *REMEMBER **tb3-lqr*** is the name of your image in this case. You can use any name you prefer.
